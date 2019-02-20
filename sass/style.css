@@ -375,7 +375,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
+  color: #cfcfcf;
   font-family: "Roboto", arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -482,7 +482,7 @@ big {
 }
 
 .rectangle:nth-child(1) {
-  background-color: #e54792;
+  background-color: #b8b8b886;
   -webkit-animation: anim1 0.5s;
           animation: anim1 0.5s;
 }

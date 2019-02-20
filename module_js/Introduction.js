@@ -41,17 +41,6 @@ export class Introduction {
             this.titrePrincipal,
             'rectangle')
 
-        let elmSecondaire = this.creerElement(elmConteneur,
-            'div',
-            this.titreSecondaire,
-            'rectangle')
-
-
-        let elmTernaire = this.creerElement(elmConteneur,
-            'div',
-            this.titreTernaire,
-            'rectangle')
-
         let elmDescription = this.creerElement(elmConteneur,
             'div',
             this.description,
