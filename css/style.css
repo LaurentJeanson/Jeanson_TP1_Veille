@@ -167,6 +167,13 @@ sup {
  */
 img {
   border-style: none;
+  width: 40%;
+}
+.img1{
+  float: left;
+}
+.img2{
+  float: right;
 }
 
 /* Forms
@@ -493,7 +500,7 @@ big {
 }
 
 .rectangle:nth-child(2) {
-  background-color: #f59723;
+  background-color: #f5972300;
   -webkit-animation: anim2 0.5s 0.5s backwards;
           animation: anim2 1.5s 1.5s backwards;
 }
