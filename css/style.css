@@ -62,6 +62,13 @@ img{
 .img2{
   float: right;
 }
+.bouton{
+  color: white;
+}
+.bouton:hover{
+  transition: 0.2s;
+  border-radius: 30%;
+}
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -502,6 +509,12 @@ button{
   background-color: #b8b8b886;
   -webkit-animation: anim4 1.5s;
           animation: anim4 1.5s;
+  opacity: 0.5;
+}
+.lesimg:hover{
+  transition: 1s;
+  opacity: 1;
+  background-color: #F2F2F2;
 }
 .rectangle:nth-child(1) {
   background-color: #b8b8b886;
@@ -813,7 +826,7 @@ body {
 }
 
 .menu {
-  background-color: #8d4b4b;
+  background-color: #403D39;
   text-align: center;
   /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
   width: 100vw;
@@ -983,7 +996,7 @@ body {
 }
 
 .box {
-  background-color: #444;
+  background-color: rgba(68, 68, 68, 0);
   color: #fff;
   border-radius: 5px;
   padding: 10px;
