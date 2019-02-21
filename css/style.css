@@ -498,6 +498,11 @@ button{
   -webkit-animation: anim3 1.5s;
           animation: anim3 1.5s;
 }
+.lesimg{
+  background-color: #b8b8b886;
+  -webkit-animation: anim4 1.5s;
+          animation: anim4 1.5s;
+}
 .rectangle:nth-child(1) {
   background-color: #b8b8b886;
   -webkit-animation: anim1 1.5s;
@@ -594,7 +599,16 @@ button{
             transform: translateX(0%) rotate(0);
   }
 }
-
+@keyframes anim4 {
+  from {
+    -webkit-transform: rotateY(-100deg);
+            transform: rotateY(-100deg);
+  }
+  to {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+}
 @-webkit-keyframes animGo {
   from {
     -webkit-transform: translateY(200vh) rotate(-45deg);
@@ -858,6 +872,12 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
+  background-image: url('../image/spaceHeader.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 150%;
 }
 
 .footer {
