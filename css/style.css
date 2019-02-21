@@ -493,6 +493,11 @@ big {
   -webkit-animation: anim1 0.5s 0.5s backwards;
           animation: anim1 0.5s 0.5s backwards;
 }
+button{
+  background-color: #b8b8b886;
+  -webkit-animation: anim3 1.5s;
+          animation: anim3 1.5s;
+}
 .rectangle:nth-child(1) {
   background-color: #b8b8b886;
   -webkit-animation: anim1 1.5s;

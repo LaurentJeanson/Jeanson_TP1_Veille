@@ -7,6 +7,7 @@ import {AnimImg} from './AnimImg.js' //
 
 /* l'élement de la page qui contiendra les éléments créés dynamiquement */
 let elmHeader = document.querySelector('.header')
+let elmContenu = document.querySelector('.content')
 let intro = new Introduction(contenuIntro, elmHeader, animationLettre, animationImage)
 
 // debutQuestionnaire()
@@ -22,8 +23,8 @@ function animationImage()
 {
     /* Une fois que l'animation des mots est terminé la fonction animLettre s'exécutera */ 
 	console.log('debut animation lettre Img')
-	const lesImages = 'Section-Image'
-	let  monAnimImg = new AnimImg(lesImages)	
+	const lesImages = ['../image/groupeAffiche.jpg','../image/Affiche.png','../image/logoTim.png']
+	let  monAnimImg = new AnimImg(lesImages, elmContenu)	
 }
 
 function finAnim()

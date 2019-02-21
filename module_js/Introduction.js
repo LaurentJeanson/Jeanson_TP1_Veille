@@ -14,7 +14,7 @@ export class Introduction {
      }}
      */
 
-    constructor(o, elementParent, fonction) {
+    constructor(o, elementParent, fonction, fonction2) {
         //Récupérer les valeurs passées en paramètre			
         this.titrePrincipal = o.titrePrincipal;
         this.titreSecondaire = o.titreSecondaire
@@ -23,6 +23,7 @@ export class Introduction {
         this.elmParent = elementParent
         this.integrerIntro()
         this.fonction = fonction
+        this.fonction2 = fonction2;
     }
 
 
@@ -73,7 +74,8 @@ export class Introduction {
 
     passerVersAnimationSuivante(evt) {
         Util.detruireTousLesNoeud(this.elmParent, this.elmParent)
-        this.fonction()
+        this.fonction();
+        this.fonction2();
     }
 
 }

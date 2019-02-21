@@ -9,36 +9,29 @@ export class AnimImg {
      * Classe permettant de créer et d'animer une introduction
      * @param {string} lesImages - contient l'ensemble des mots d'intro
      * @param {DOMElement} elementParent - Conteneur de l'animation
-     * @param {function} fonction - l'adresse de la fonction à exécuter après l'animation
          
      }}
      */
 
-    constructor(lesImages, elementParent, fonction) {
+    constructor(lesImages, elementParent) {
         //Récupérer les valeurs passées en paramètre			
         this.lesImages = lesImages
         this.elmParent = elementParent
-        this.AnimImg(this.lesImages)
-        this.fonction = fonction
+        this.LesImages(this.lesImages)
     }
 
 
-    lesImages(lesImages) {
+    LesImages(lesImages) {
         /* Création des élément DOM qui seront animés. 
         Les éléments seront intégré dans le conteneur elmParent
         */
        let i = 0;
-       const tabCouleur = ['#fed136', '#BFB000' , '#FFEA00', '#403B00', '#E5D300','#fed136']
-       let nbLettres = lesLettres.length;
-        let elmConteneur = this.creerElement(this.elmParent,
-            'section',
-            '',
-            'mot')
+       let nbImg = lesImages.length;
+
+        for (let uneImage of lesImages){
+            let elmImage = this.creerElement(this.elmParent, 'img', uneImage, 'lesimg')
+            elmImage.style.animationDelay = (i * 0.5) + "s";
             
-        for (let uneLettre of lesLettres){
-            let elmLettre = this.creerElement(elmConteneur, 'div', uneLettre, 'mot')
-            elmLettre.style.animationDelay = (i * 0.5) + "s";
-            elmLettre.style.color = tabCouleur[(i++)%5]    
         }
 
         /* On garde une référence sur la fonction terminerIntro */
@@ -49,7 +42,7 @@ export class AnimImg {
         console.log(balise)
         let noeud = document.createElement(balise)
         if (contenu != '') {
-            noeud.innerHTML = contenu
+            noeud.src = contenu;
         }
         noeud.classList.add(classCSS)
         elmParent.appendChild(noeud)
