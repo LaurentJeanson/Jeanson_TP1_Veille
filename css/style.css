@@ -52,6 +52,16 @@ html {
 body {
   margin: 0;
 }
+.bouton{
+  color: white;
+  background-color: rgb(167, 164, 11);
+  border-radius: 40px;
+}
+.bouton:hover{
+  transition: 1s;
+  background-color: yellow;
+  color: black;
+}
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
