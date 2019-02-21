@@ -375,7 +375,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #cfcfcf;
+  color: #404040;
   font-family: "Roboto", arial, sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -873,14 +873,14 @@ body {
   display: grid;
   width: 100vw;
   grid-gap: 1em;
-      grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer";
+      grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer";
 }
 
 @media only screen and (min-width: 500px) {
   .conteneur {
     -ms-grid-columns: 20% auto;
         grid-template-columns: 20% auto;
-        grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
+        grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
     min-width: 500px;
   }
 }
@@ -931,7 +931,7 @@ body {
     grid-gap: 20px;
     -ms-grid-columns: 120px auto 120px;
         grid-template-columns: 120px auto 120px;
-        grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
+        grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
     max-width: 100%;
   }
 }

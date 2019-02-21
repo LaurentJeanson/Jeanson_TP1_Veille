@@ -39,7 +39,7 @@ export class Introduction {
         let elmPrincipale = this.creerElement(elmConteneur,
             'div',
             this.titrePrincipal,
-            'rectangle')
+            'titreP')
 
         let elmDescription = this.creerElement(elmConteneur,
             'div',

@@ -450,8 +450,13 @@ big {
       flex-wrap: wrap;
   width: 100vw;
 }
-
+.titreP{
+  color:white;
+  -webkit-animation: anim1 0.5s;
+          animation: anim1 0.5s;
+}
 .rectangle {
+  color:white;
   min-height: 2em;
   width: 50%;
   display: -webkit-box;
@@ -490,7 +495,7 @@ big {
 .rectangle:nth-child(2) {
   background-color: #f59723;
   -webkit-animation: anim2 0.5s 0.5s backwards;
-          animation: anim2 0.5s 0.5s backwards;
+          animation: anim2 1.5s 1.5s backwards;
 }
 
 .rectangle:nth-child(3) {
@@ -528,9 +533,13 @@ big {
     -webkit-transform: translateY(-50vh) rotate(-45deg);
             transform: translateY(-50vh) rotate(-45deg);
   }
+  50%{
+    -webkit-transform: translateY(5vh) rotate(-45deg);
+            transform: translateY(5vh) rotate(-45deg);
+  }
   to {
-    -webkit-transform: translateY(0%) rotate(0);
-            transform: translateY(0%) rotate(0);
+    -webkit-transform: translateY(0%) rotate(70);
+            transform: translateY(0%) rotate(70);
   }
 }
 
@@ -547,12 +556,14 @@ big {
 
 @keyframes anim2 {
   from {
-    -webkit-transform: translateX(-200%) rotate(-45deg);
-            transform: translateX(-200%) rotate(-45deg);
+    -webkit-transform: translateX(0%) rotateY(-180deg);
+            transform: translateX(0%) rotateY(-180deg);
+            color: rgb(116, 116, 116);
   }
   to {
-    -webkit-transform: translateX(0%) rotate(0);
-            transform: translateX(0%) rotate(0);
+    -webkit-transform: translateX(0%) rotateY(0);
+            transform: translateX(0%) rotateY(0);
+            color: white;
   }
 }
 
@@ -847,6 +858,7 @@ body {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: footer;
+  text-align: center;
 }
 
 .conteneur {
