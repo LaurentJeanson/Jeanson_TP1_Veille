@@ -23,7 +23,7 @@ function animationImage()
 {
     /* Une fois que l'animation des mots est terminé la fonction animLettre s'exécutera */ 
 	console.log('debut animation lettre Img')
-	const lesImages = ['../image/groupeAffiche.jpg','../image/Affiche.png','../image/logoTim.png']
+	const lesImages = ['./image/groupeAffiche.jpg','../image/Affiche.png','../image/logoTim.png']
 	let  monAnimImg = new AnimImg(lesImages, elmContenu)	
 }
 
